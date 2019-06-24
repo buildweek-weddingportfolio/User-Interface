@@ -1,9 +1,4 @@
 // navigational styling
-.container {
-	margin: 0 auto;
-	max-width: 1200px;
-	width:100%;
-}
 
 nav {
     background-color: @light-grey;
@@ -31,11 +26,12 @@ nav {
             color:@navy;
             font-weight: 700;
             text-decoration: none;
-            // .transition();
+            .transition();
 
             &:hover{
-                color:fadeout(white, 50%);
+                color:fadeout(@mint, 50%);
             }
         }
     }
 }
+
