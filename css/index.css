@@ -1,0 +1,48 @@
+.shadow {
+  -webkit-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.15);
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+nav {
+  background-color: #F2F2F2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  -webkit-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  height: 100px;
+  width: 100vw;
+  overflow: hidden;
+  z-index: 1;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-list li {
+  list-style: none;
+  padding: 0 30px;
+}
+.nav-list li a {
+  color: #0A235C;
+  font-weight: 700;
+  text-decoration: none;
+}
+.nav-list li a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}

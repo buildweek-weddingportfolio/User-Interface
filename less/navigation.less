@@ -1,0 +1,41 @@
+// navigational styling
+.container {
+	margin: 0 auto;
+	max-width: 1200px;
+	width:100%;
+}
+
+nav {
+    background-color: @light-grey;
+    .custom-layout(space-around, center);
+	margin: 0;
+	.shadow();
+	position: fixed;
+    top: 0%;
+    left: 0%;
+	height: 100px;
+    width: 100vw;
+    overflow: hidden;
+	z-index: 1;
+}
+
+
+.nav-list{
+    .custom-layout(space-around, center);
+
+    li{
+        list-style: none;
+        padding: 0 30px;
+        
+        a{	
+            color:@navy;
+            font-weight: 700;
+            text-decoration: none;
+            // .transition();
+
+            &:hover{
+                color:fadeout(white, 50%);
+            }
+        }
+    }
+}
