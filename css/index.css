@@ -186,3 +186,16 @@ nav {
 .nav-list li a:hover {
   color: rgba(194, 235, 230, 0.5);
 }
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+.carousel {
+  margin-top: 120px;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
