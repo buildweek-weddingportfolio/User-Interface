@@ -21,7 +21,7 @@
     padding: 0 20px 35px;
     border: 1px solid @mint;
     position: relative;
-    height: 145px;
+    height: 140px;
     overflow: hidden;
     box-shadow: 2px 2px 2px lightgrey;
     -webkit-transition: height .5s ease;
@@ -62,10 +62,10 @@
     margin: 25px 20px 0;
 
     img{
-        max-width: 100%;
-        width: 300px;
+        max-width: 300px;
+        width: 100%;
 
-        @media @desktop {
+        @media screen and (max-width: 1070px){
             display: none;
         }
     }
@@ -73,15 +73,18 @@
     .text-container {
         width: 60%;
 
-        @media @desktop {
+        @media screen and (max-width: 1070px) {
             width: 100%;
         }
     }
 }
 
-
-
 .article-open {
     height:400px;
+
+    @media screen and (max-width: 1070px) {
+        min-height: 350px;
+        height: 100%;
+    }
 }
 
