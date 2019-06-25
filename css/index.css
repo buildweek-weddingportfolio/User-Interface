@@ -159,7 +159,7 @@ nav {
   position: fixed;
   top: 0%;
   left: 0%;
-  height: 100px;
+  height: 8vh;
   width: 100vw;
   overflow: hidden;
   z-index: 1;
@@ -168,6 +168,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 60%;
 }
 .nav-list li {
   list-style: none;
@@ -185,6 +186,27 @@ nav {
 }
 .nav-list li a:hover {
   color: rgba(194, 235, 230, 0.5);
+}
+.nav-toggle {
+  display: none;
+}
+.nav-toggle div {
+  background-color: #0A235C;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+}
+@media screen and (max-width: 768px) {
+  .nav-list {
+    background-color: #F2F2F2;
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .container {
   margin: 0 auto;
@@ -205,22 +227,23 @@ nav {
 .articles {
   margin-top: 40px;
 }
-.articles .article {
+.article {
   margin: 20px 10%;
   padding: 0 20px 35px;
   border: 1px solid #C2EBE6;
   position: relative;
+  height: 145px;
   overflow: hidden;
   box-shadow: 2px 2px 2px lightgrey;
-  -webkit-transition: height 0.25s ease;
-  -moz-transition: height 0.25s ease;
-  transition: height 0.25s ease;
+  -webkit-transition: height 0.5s ease;
+  -moz-transition: height 0.5s ease;
+  transition: height 0.5s ease;
 }
 .panel-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 15px 10px;
+  margin: 15px 10px 10px;
 }
 .panel-header img {
   border-radius: 50%;
@@ -231,9 +254,38 @@ nav {
 }
 .panel-header button {
   background: none;
-  border: none;
+  border: 1px solid #FFEDEA;
+  border-radius: 50%;
 }
 .panel-header button i {
   color: #0A235C;
   font-size: 26px;
+  cursor: pointer;
+}
+.panel-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 25px 20px 0;
+}
+.panel-body img {
+  max-width: 100%;
+  width: 300px;
+}
+@media screen and (max-width: 1024px) {
+  .panel-body img {
+    display: none;
+  }
+}
+.panel-body .text-container {
+  width: 60%;
+}
+@media screen and (max-width: 1024px) {
+  .panel-body .text-container {
+    width: 100%;
+  }
+}
+.article-open {
+  height: 400px;
 }

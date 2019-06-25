@@ -14,26 +14,25 @@
 
 .articles {
     margin-top: 40px;
+}
 
-    .article {
-        margin: 20px 10%;
-        padding: 0 20px 35px;
-        border: 1px solid @mint;
-        // border-radius: 10px;
-        position: relative;
-        // height: 145px;
-        overflow: hidden;
-        box-shadow: 2px 2px 2px lightgrey;
-        -webkit-transition: height .25s ease;
-        -moz-transition: height .25s ease;
-        transition: height .25s ease;
-
-    }
+.article {
+    margin: 20px 10%;
+    padding: 0 20px 35px;
+    border: 1px solid @mint;
+    position: relative;
+    height: 145px;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px lightgrey;
+    -webkit-transition: height .5s ease;
+       -moz-transition: height .5s ease;
+            transition: height .5s ease;
+    
 }
 
 .panel-header {
     .custom-layout(space-between, center);
-    margin: 15px 10px;
+    margin: 15px 10px 10px;
 
     img {
         border-radius: 50%;
@@ -46,13 +45,43 @@
 
     button {
         background: none;
-        border: none;
+        border: 1px solid @pink;
+        border-radius: 50%;
 
         i {
             color: @navy;
             font-size: 26px;
+            cursor: pointer;
         }
-
     }
-
 }
+
+.panel-body {
+    .custom-layout(space-between, center);
+    flex-wrap: wrap;
+    margin: 25px 20px 0;
+
+    img{
+        max-width: 100%;
+        width: 300px;
+
+        @media @desktop {
+            display: none;
+        }
+    }
+    
+    .text-container {
+        width: 60%;
+
+        @media @desktop {
+            width: 100%;
+        }
+    }
+}
+
+
+
+.article-open {
+    height:400px;
+}
+

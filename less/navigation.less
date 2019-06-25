@@ -8,15 +8,17 @@ nav {
 	position: fixed;
     top: 0%;
     left: 0%;
-	height: 100px;
+	height: 8vh;
     width: 100vw;
     overflow: hidden;
-	z-index: 1;
+    z-index: 1;
+    
 }
 
 
 .nav-list{
     .custom-layout(space-around, center);
+    width: 60%;
 
     li{
         list-style: none;
@@ -34,3 +36,32 @@ nav {
         }
     }
 }
+
+.nav-toggle {
+    display: none;
+
+    div {
+        background-color: @navy;
+        width: 25px;
+        height: 3px;
+        margin: 5px
+    }
+}
+
+@media @desktop {
+
+}
+
+@media @tablet {
+    .nav-list {
+        background-color: @light-grey;
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+}
+

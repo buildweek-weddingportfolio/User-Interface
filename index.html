@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Wedding Planner Website</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <script src="js/index.js" async></script>
 </head>
 
 <body>
@@ -16,7 +18,7 @@
                 <p>LOGO</p>
             </div>
             <ul class="nav-list">
-                <li class="nav-links"><a href="">Home</a></li>
+                <li class="nav-links"><a href="" class="active">Home</a></li>
                 <li class="nav-links"><a href="">About</a></li>
                 <li class="nav-links"><a href="">Wedding Planners</a></li>
                 <li class="nav-links"><a href="">Contact</a></li>
@@ -24,6 +26,11 @@
             <div class="log-in">
                 <button><a href="#">Log In</a></button>
             </div>
+            <div class="nav-toggle">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
         </nav>
     </header>
     <main class="container">
@@ -52,17 +59,21 @@
             <div class="articles">
                 <div class="article">
                     <div class="panel-header">
-                        <img src="assets/img/image-94.png" alt="Picture of Alyssa" class="user-pic">
+                        <div class="img-container">
+                            <img src="assets/img/image-94.png" alt="Picture of Alyssa" class="user-pic">
+                        </div>
                         <h2>Alyssa & Sam</h2>
-                        <button><i class="fa fa-angle-down"></i></button>
+                        <button class="expand"><i class="fa fa-angle-down"></i></button>
                     </div>
                     <div class="panel-body">
-                        <img src="assets/img/adults-bouquet-bridal-woods.png" alt="Bride and groom in the woods">
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            utlabore et dolore magna aliqua. Quis risus sed vulputate odio ut. Tempus urna et pharetra
-                            pharetra massa. Et ultrices neque ornare aenean euismod elementum nisi quis. Mattis enim
-                            uttellus elementum sagittis."
-                        </p>
+                         <img src="assets/img/adults-bouquet-bridal-woods.png" alt="Bride and groom in the woods">
+                        <div class="text-container">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  utlabore et dolore magna aliqua. Quis risus sed vulputate odio ut. Tempus urna et pharetra pharetra massa. Et ultrices neque ornare aenean euismod elementum nisi quis. Mattis enim uttellus elementum sagittis."
+                            </p>
+                            <br>
+                            <p>"Quis risus sed vulputate odio ut. Tempus urna et pharetra pharetra massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  utlabore et dolore magna aliqua. Quis risus sed vulputate odio ut. Tempus urna et pharetra pharetra massa. Et ultrices neque ornare aenean euismod elementum nisi quis. Mattis enim uttellus elementum sagittis."
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -70,15 +81,16 @@
                     <div class="panel-header">
                         <img src="assets/img/image-11.png" alt="Picture of Brianna" class="user-pic">
                         <h2>Brianna & Devon</h2>
-                        <button><i class="fa fa-angle-down"></i></button>
-
+                        <button class="expand"><i class="fa fa-angle-down"></i></button>
                     </div>
                     <div class="panel-body">
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            utlabore et dolore magna aliqua. Quis risus sed vulputate odio ut. Tempus urna et pharetra
-                            pharetra massa. Et ultrices neque ornare aenean euismod elementum nisi quis. Mattis enim
-                            uttellus elementum sagittis."
-                        </p>
+                        <div class="text-container">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Quis risus sed vulputate odio ut. Tempus urna et pharetra pharetra massa. Et ultrices neque ornare aenean euismod elementum nisi quis. Mattis enim uttellus elementum sagittis."
+                            </p>
+                            <br>
+                            <p>"Quis risus sed vulputate odio ut. Tempus urna et pharetra pharetra massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  utlabore et dolore magna aliqua. Quis risus sed vulputate odio ut. Tempus urna et pharetra pharetra massa. Et ultrices neque ornare aenean euismod elementum nisi quis. Mattis enim uttellus elementum sagittis."
+                            </p>
+                        </div> 
                         <img src="assets/img/rings-herart-shape-pages.png" alt="Wedding rings in a book with heart shaped pages">
                     </div>
                 </div>
@@ -87,16 +99,18 @@
                     <div class="panel-header">
                         <img src="assets/img/image-32.png" alt="Picture of Claire" class="user-pic">
                         <h2>Claire & Adam</h2>
-                        <button><i class="fa fa-angle-down"></i></button>
+                        <button class="expand"><i class="fa fa-angle-down"></i></button>
 
                     </div>
                     <div class="panel-body">
                         <img src="assets/img/sitting-bouquet-bride-couple.png" alt="Bride and groom sitting on the steps with bouquet in front of them">
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            utlabore et dolore magna aliqua. Quis risus sed vulputate odio ut. Tempus urna et pharetra
-                            pharetra massa. Et ultrices neque ornare aenean euismod elementum nisi quis. Mattis enim
-                            uttellus elementum sagittis."
-                        </p>
+                        <div class="text-container">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  utlabore et dolore magna aliqua. Quis risus sed vulputate odio ut. Tempus urna et pharetra pharetra massa. Et ultrices neque ornare aenean euismod elementum nisi quis. Mattis enim uttellus elementum sagittis."
+                            </p>
+                            <br>
+                            <p>"Quis risus sed vulputate odio ut. Tempus urna et pharetra pharetra massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  utlabore et dolore magna aliqua. Quis risus sed vulputate odio ut. Tempus urna et pharetra pharetra massa. Et ultrices neque ornare aenean euismod elementum nisi quis. Mattis enim uttellus elementum sagittis."
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -104,13 +118,16 @@
                     <div class="panel-header">
                         <img src="assets/img/image-126.png" alt="Picture of Sascha" class="user-pic">
                         <h2>Sascha & Gabriel</h2>
-                        <button><i class="fa fa-angle-down"></i></button>
+                        <button class="expand"><i class="fa fa-angle-down"></i></button>
                     </div>
                     <div class="panel-body">
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            utlabore et dolore magna aliqua. Quis risus sed vulputate odio ut. Tempus urna et pharetra
-                            pharetra massa. Et ultrices neque ornare aenean euismod elementum nisi quis. Mattis enim
-                            uttellus elementum sagittis."</p>
+                        <div class="text-container">
+                             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Quis risus sed vulputate odio ut. Tempus urna et pharetra pharetra massa. Et ultrices neque ornare aenean euismod elementum nisi quis. Mattis enim uttellus elementum sagittis."
+                            </p>
+                            <br>
+                            <p>"Quis risus sed vulputate odio ut. Tempus urna et pharetra pharetra massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  utlabore et dolore magna aliqua. Quis risus sed vulputate odio ut. Tempus urna et pharetra pharetra massa. Et ultrices neque ornare aenean euismod elementum nisi quis. Mattis enim uttellus elementum sagittis."
+                            </p>
+                        </div>
                         <img src="assets/img/bride-groom-tropics.png" alt="Bride and groom in a loving embrace under a tropical flower covered pergola.">
                     </div>
                 </div>
@@ -119,15 +136,17 @@
                     <div class="panel-header">
                         <img src="assets/img/image-128.png" alt="Picture of David" class="user-pic">
                         <h2>David & Landon</h2>
-                        <button><i class="fa fa-angle-down"></i></button>
+                        <button class="expand"><i class="fa fa-angle-down"></i></button>
                     </div>
                     <div class="panel-body">
                         <img src="assets/img/groomsmen-socks.png" alt="Groom and groomsmen showing colorfully striped socks.">
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            utlabore et dolore magna aliqua. Quis risus sed vulputate odio ut. Tempus urna et pharetra
-                            pharetra massa. Et ultrices neque ornare aenean euismod elementum nisi quis. Mattis enim
-                            uttellus elementum sagittis."
-                        </p>
+                        <div class="text-container">
+                             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Quis risus sed vulputate odio ut. Tempus urna et pharetra  pharetra massa. Et ultrices neque ornare aenean euismod elementum nisi quis. Mattis enim uttellus elementum sagittis."
+                            </p>
+                            <br>
+                            <p>"Quis risus sed vulputate odio ut. Tempus urna et pharetra pharetra massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  utlabore et dolore magna aliqua. Quis risus sed vulputate odio ut. Tempus urna et pharetra pharetra massa. Et ultrices neque ornare aenean euismod elementum nisi quis. Mattis enim uttellus elementum sagittis."
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
