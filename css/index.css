@@ -210,7 +210,6 @@ nav {
   padding: 0 20px 35px;
   border: 1px solid #C2EBE6;
   position: relative;
-  height: 145px;
   overflow: hidden;
   box-shadow: 2px 2px 2px lightgrey;
   -webkit-transition: height 0.25s ease;
