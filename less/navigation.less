@@ -1,0 +1,138 @@
+// navigational styling
+
+nav {
+    background-color: @light-grey;
+    .custom-layout(space-around, center);
+	margin: 0;
+	.shadow();
+	position: fixed;
+    top: 0%;
+    left: 0%;
+	height: 8vh;
+    width: 100vw;
+    z-index: 99;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-list{
+    .custom-layout(space-around, center);
+    width: 60%;
+
+    .nav-links{
+        list-style: none;
+        padding: 10px 10px;
+        
+        a{	
+            color:@dark-blue ;
+            font-weight: 700;
+            text-decoration: none;
+            .transition();
+            // &:hover{
+            //     color:fadeout(@pink, 50%);
+            // }
+        }
+    }
+}
+
+.log-in {
+
+    button {
+        background:@dark-blue ;
+        color: white;
+        cursor: pointer;
+        border: 2px solid @dark-blue ;
+        padding: 8px 20px;
+        text-decoration: none;
+        transition: all .5s ease-in-out;
+
+        &:hover {
+            background: @pink;
+            color: @dark-blue ;
+            border: 2px solid @dark-blue ;
+        }
+    }
+}
+
+.outside{
+    display: block;
+}
+
+.inside {
+    display: none;
+}
+
+// Hamburger Menu Styling
+.nav-toggler {
+    display: none;
+    cursor: pointer;
+
+    div {
+        background-color: @dark-blue ;
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+        transition: all 0.3s ease-in;
+    }
+}
+
+
+@media @tablet {
+    .nav-list {
+        background-color: @light-grey;
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        .custom-layout(space-around, center);
+        flex-direction: column;
+        width: 50%;
+        z-index: 0;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links {
+        opacity: 0;
+    }
+
+    .nav-toggler {
+        display: block;
+    }
+
+    #outside{
+        display: none;
+    }
+    
+    .inside {
+        display: block;
+    }
+
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px); 
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px); 
+    }
+}
+
+// Making the X close button 
+.toggle .line1 {                       //(x,y)
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
+}
