@@ -32,7 +32,59 @@ const navSlide = () => {
 navSlide();
 
 
-// Carousel
+// Header Carousel
+
+class ImgSlide {
+    constructor(element) {
+        this.element = element;
+        this.slide = this.element.querySelectorAll('.img-container');
+        this.rightBtn = document.getElementById('right-arrow');
+        this.leftBtn = document.getElementById('left-arrow');
+        this.rightBtn.addEventListener('click', () => this.slideRight());
+        this.leftBtn.addEventListener('click', () => this.slideLeft());
+        this.index = 0;
+        this.slide[this.index].style.display = "block";
+        // console.log(this.slide[2]);
+        
+    }
+    slideRight() {
+        console.log('Outer: ' + this.index);
+        if (this.index <= 1) {
+            
+            if (this.index < 0) {
+                this.slide[this.index] == 0;
+            }
+
+            this.slide[this.index].style.display = "none";
+            this.index++;
+            this.slide[this.index].style.display = "block";
+            
+            console.log("inside if : " + this.index);
+        }
+        
+    }
+    slideLeft() {
+        console.log('Outer: ' + this.index);
+            if(this.index >= 0) {
+                
+                if (this.index < 0) {
+                this.slide[this.index] == 0;
+            }
+
+                this.slide[this.index].style.display = "block";
+                this.index--;
+                this.slide[this.index].style.display = "none";
+
+                console.log("inside if : " + this.index);
+            }
+    }
+}
+
+let imgContainer = document.querySelector(".imgs");
+let imgSlider = new ImgSlide(imgContainer);
+
+
+// Accordion
 class Article {
     constructor(article) {
         // assigning this.article to the passed article

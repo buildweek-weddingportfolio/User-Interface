@@ -1,0 +1,122 @@
+// ********** CAROUSEL STUFF ********** //
+
+#luis {
+    margin-top: 20px;
+    margin-bottom: 200px;
+    padding: 0 50px;
+
+    @media(max-width: 500px) {
+        padding: 0 50px;
+    }
+}
+
+.carousel-container {
+    height: 500px;
+    max-width: 1000px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+
+    @media (max-width: 850px) {
+        height: 400px;
+    }
+    @media (max-width: 750px) {
+        height: 300px;
+    }
+    @media (max-width: 550px) {
+        height: 250px;
+    }
+}
+.carousel-img-one {
+    width: 100%;
+}
+
+
+
+// ********** ARROWS ********** //
+
+.arrow {
+    width: 30px;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 10px;
+    top: 39%;
+    bottom: 45%;
+    position: absolute;
+    background-color: @light-grey;
+
+    &:hover {
+        cursor: pointer;
+        top: 38.5%;
+        transition: .25s ease-in-out;
+    }
+}
+#right-arrow {
+    right: 0;
+    transform: rotate(180deg);
+    padding: 5px;
+    box-shadow: 0 -5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+#left-arrow {
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+// ********** CAROUSEL TXT STUFF ********** //
+
+.carousel-text-container {
+    color: @dark-blue;
+    position: absolute;
+    text-align: center;
+    width: 250px;
+    height: 160px;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+
+    h1 {
+        font-size: 50px;
+        margin: 5px;
+        font-family: cursive;
+    }
+    h2 {
+        font-size: 20px;
+        margin: 15px;
+        line-height: 25px;
+    }
+            
+    button {
+        border: none;
+        margin: 5px;
+        background-color: @dark-blue;
+        color: @light-grey;
+        width: 100px;
+        height: 30px;
+        padding: 5px;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+
+        &:hover {
+            background-color: @pink;
+            color: @dark-blue;
+            cursor: pointer;
+            color: @dark-blue;
+            font-weight: bold;
+            transition: .25s ease;
+        }
+    }
+    @media (max-width: 745px) {
+        left: 50%;
+        top: 40%;
+    }
+    @media(max-width: 600px) {
+        background-color: rgba(255, 255, 255, 0.5);
+        left: 50%;
+        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.253);
+        top: 45%;
+    }
+    @media(max-width: 450px) {
+        width: 200px;
+    }
+} 
+
+
+// ********** JS ACTIVATED CSS ********** //
