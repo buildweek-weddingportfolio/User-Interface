@@ -45,8 +45,9 @@
 
     button {
         background: none;
-        border: 1px solid @pink;
-        border-radius: 50%;
+        border:none;
+        transition: all .5s ease-in-out;
+        
 
         i {
             color: @navy;
@@ -54,6 +55,10 @@
             cursor: pointer;
         }
     }
+}
+
+.rotate {
+    transform: rotate(180deg);
 }
 
 .panel-body {

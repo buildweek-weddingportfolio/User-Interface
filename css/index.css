@@ -171,11 +171,11 @@ nav {
   align-items: center;
   width: 60%;
 }
-.nav-list li {
+.nav-list .nav-links {
   list-style: none;
-  padding: 0 30px;
+  padding: 10px 10px;
 }
-.nav-list li a {
+.nav-list .nav-links a {
   color: #0A235C;
   font-weight: 700;
   text-decoration: none;
@@ -185,8 +185,28 @@ nav {
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-.nav-list li a:hover {
-  color: rgba(194, 235, 230, 0.5);
+.nav-list .nav-links a:hover {
+  color: rgba(255, 237, 234, 0.5);
+}
+.log-in button {
+  background: #0A235C;
+  color: white;
+  cursor: pointer;
+  border: 2px solid #0A235C;
+  padding: 8px 20px;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+.log-in button:hover {
+  background: #FFEDEA;
+  color: #0A235C;
+  border: 2px solid #0A235C;
+}
+.outside {
+  display: block;
+}
+.inside {
+  display: none;
 }
 .nav-toggler {
   display: none;
@@ -219,6 +239,12 @@ nav {
     opacity: 0;
   }
   .nav-toggler {
+    display: block;
+  }
+  #outside {
+    display: none;
+  }
+  .inside {
     display: block;
   }
 }
@@ -290,13 +316,16 @@ nav {
 }
 .panel-header button {
   background: none;
-  border: 1px solid #FFEDEA;
-  border-radius: 50%;
+  border: none;
+  transition: all 0.5s ease-in-out;
 }
 .panel-header button i {
   color: #0A235C;
   font-size: 26px;
   cursor: pointer;
+}
+.rotate {
+  transform: rotate(180deg);
 }
 .panel-body {
   display: flex;

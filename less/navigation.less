@@ -19,21 +19,47 @@ nav {
     .custom-layout(space-around, center);
     width: 60%;
 
-    li{
+    .nav-links{
         list-style: none;
-        padding: 0 30px;
+        padding: 10px 10px;
         
         a{	
             color:@navy;
             font-weight: 700;
             text-decoration: none;
             .transition();
-
             &:hover{
-                color:fadeout(@mint, 50%);
+                color:fadeout(@pink, 50%);
             }
         }
     }
+}
+
+.log-in {
+
+    button {
+        background: @navy;
+        color: white;
+        cursor: pointer;
+        border: 2px solid @navy;
+        padding: 8px 20px;
+        text-decoration: none;
+        transition: all .5s ease-in-out;
+
+        &:hover {
+            background: @pink;
+            color: @navy;
+            border: 2px solid @navy;
+        }
+    }
+}
+
+.outside{
+    display: block;
+}
+
+.inside {
+    display: none;
 }
 
 // Hamburger Menu Styling
@@ -50,9 +76,6 @@ nav {
     }
 }
 
-@media @desktop {
-
-}
 
 @media @tablet {
     .nav-list {
@@ -74,6 +97,14 @@ nav {
     }
 
     .nav-toggler {
+        display: block;
+    }
+
+    #outside{
+        display: none;
+    }
+    
+    .inside {
         display: block;
     }
 
