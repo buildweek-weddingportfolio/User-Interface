@@ -20,6 +20,7 @@
   font-family: Lato, 'Futura', Helvetica, sans-serif;
   font-size: 1.6rem;
   border: 2px solid #0A235C;
+  border-radius: 3px;
   width: 120px;
   height: 35px;
   padding: 5px;
@@ -176,7 +177,7 @@ body {
 body::after {
   content: "";
   background-image: url('../assets/imgs/pattern-wallpaper3.png');
-  opacity: 0.35;
+  opacity: 0.45;
   top: 0;
   left: 0;
   bottom: 0;
@@ -277,6 +278,7 @@ nav .logo {
   font-family: Lato, 'Futura', Helvetica, sans-serif;
   font-size: 1.6rem;
   border: 2px solid #0A235C;
+  border-radius: 3px;
   width: 120px;
   height: 35px;
   padding: 5px;
@@ -442,7 +444,7 @@ nav .logo {
 .carousel-text-container h1 {
   font-size: 70px;
   margin: 5px;
-  font-family: cinque-donne, serif;
+  font-family: cinque-donne, cursive;
 }
 .carousel-text-container h2 {
   font-size: 20px;
@@ -456,6 +458,7 @@ nav .logo {
   font-family: Lato, 'Futura', Helvetica, sans-serif;
   font-size: 1.6rem;
   border: 2px solid #0A235C;
+  border-radius: 3px;
   width: 120px;
   height: 35px;
   padding: 5px;
@@ -471,6 +474,9 @@ nav .logo {
   background: #FFEDEA;
   color: #0A235C;
 }
+.carousel-text-container button:hover a {
+  color: #0A235C;
+}
 .carousel-text-container button a {
   color: white;
   text-decoration: none;
@@ -479,9 +485,6 @@ nav .logo {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-.carousel-text-container button a:hover {
-  color: #0A235C;
 }
 @media (max-width: 745px) {
   .carousel-text-container {
@@ -602,6 +605,7 @@ tr:nth-child(even) {
   font-family: Lato, 'Futura', Helvetica, sans-serif;
   font-size: 1.6rem;
   border: 2px solid #0A235C;
+  border-radius: 3px;
   width: 120px;
   height: 35px;
   padding: 5px;
@@ -882,8 +886,7 @@ tr:nth-child(even) {
   width: 100%;
   height: 300px;
   display: flex;
-  justify-content: space-around;
-  align-content: center;
+  justify-content: center;
   padding-top: 60px;
   background-color: #FFEDEA;
 }
@@ -893,8 +896,8 @@ tr:nth-child(even) {
   }
 }
 .tabs img {
-  width: 140px;
-  height: 180px;
+  width: 179px;
+  height: 199px;
 }
 @media screen and (max-width: 500px) {
   .tabs img {
@@ -1058,6 +1061,7 @@ tr:nth-child(even) {
   font-family: Lato, 'Futura', Helvetica, sans-serif;
   font-size: 1.6rem;
   border: 2px solid #0A235C;
+  border-radius: 3px;
   width: 120px;
   height: 35px;
   padding: 5px;

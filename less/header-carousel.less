@@ -47,7 +47,7 @@
 
     &:hover {
         cursor: pointer;
-        top: 38.5%;
+        top: 38.5%;//
         transition: .25s ease-in-out;
     }
 }
@@ -76,7 +76,7 @@
     h1 {
         font-size: 70px;
         margin: 5px;
-        font-family: cinque-donne, serif;
+        font-family: cinque-donne, cursive;
     }
     h2 {
         font-size: 20px;
@@ -90,22 +90,24 @@
 
         &:hover {
             .button-hover();
+            a{
+                color: @dark-blue;
+            }
+
         }
 
         a{
             color: white;
             text-decoration: none;
             .transition();
-
-            &:hover {
-                color:@dark-blue;
-            }
         }
     }
+
     @media (max-width: 745px) {
         left: 50%;
         top: 40%;
     }
+
     @media(max-width: 600px) {
         background-color: rgba(255, 255, 255, 0.5);
         left: 50%;

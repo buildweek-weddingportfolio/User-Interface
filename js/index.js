@@ -62,6 +62,7 @@ class ImgSlide {
         this.rightBtn.addEventListener('click', () => this.slideRight());
         this.leftBtn.addEventListener('click', () => this.slideLeft());
         this.index = 0;
+        this.slide.forEach(img => img.style.display = "none")
         this.slide[this.index].style.display = "block";
         // console.log(this.slide[2]);
         
