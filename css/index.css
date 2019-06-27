@@ -7,11 +7,32 @@
   box-shadow: 1px 2px 5px 1px lightgrey;
 }
 .transition {
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.button {
+  background: #0A235C;
+  color: white;
+  cursor: pointer;
+  font-family: Lato, 'Futura', Helvetica, sans-serif;
+  font-size: 1.6rem;
+  border: 2px solid #0A235C;
+  width: 120px;
+  height: 35px;
+  padding: 5px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.button-hover {
+  background: #FFEDEA;
+  color: #0A235C;
 }
 html,
 body,
@@ -141,6 +162,9 @@ table {
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 html,
 body {
   height: 100%;
@@ -156,12 +180,28 @@ h2,
 h3,
 h4,
 h5,
-h6,
 p,
 ul,
 li,
 a {
   font-family: Lato, 'Futura', Helvetica, sans-serif;
+}
+h1 {
+  font-size: 3.6rem;
+}
+p {
+  font-size: 1.8rem;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #C2EBE6;
+  margin: 60px auto;
+  max-width: 1060px;
+  width: 100%;
 }
 nav {
   background-color: #F2F2F2;
@@ -174,14 +214,17 @@ nav {
   -o-box-shadow: 1px 2px 5px 1px lightgrey;
   box-shadow: 1px 2px 5px 1px lightgrey;
   position: fixed;
+  top: 0%;
+  right: 0%;
+  margin: 0%;
   height: 12vh;
   width: 100vw;
-  z-index: 99;
+  z-index: 1;
   text-transform: uppercase;
 }
 nav .logo {
   position: relative;
-  max-width: 150px;
+  max-width: 12vh;
 }
 .nav-list {
   display: flex;
@@ -192,30 +235,47 @@ nav .logo {
 .nav-list .nav-links {
   list-style: none;
   padding: 10px 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .nav-list .nav-links a {
   color: #0A235C;
+  font-size: 1.8rem;
   font-weight: 700;
   text-decoration: none;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .log-in button {
   background: #0A235C;
   color: white;
   cursor: pointer;
+  font-family: Lato, 'Futura', Helvetica, sans-serif;
+  font-size: 1.6rem;
   border: 2px solid #0A235C;
-  padding: 8px 20px;
+  width: 120px;
+  height: 35px;
+  padding: 5px;
   text-decoration: none;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .log-in button:hover {
   background: #FFEDEA;
   color: #0A235C;
-  border: 2px solid #0A235C;
+}
+.log-in button a {
+  color: white;
+  text-decoration: none;
 }
 .outside {
   display: block;
@@ -286,7 +346,7 @@ nav .logo {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 #luis {
-  margin-top: 160px;
+  margin-top: 165px;
   padding: 0 50px;
 }
 @media (max-width: 500px) {
@@ -296,7 +356,7 @@ nav .logo {
 }
 .carousel-container {
   height: 500px;
-  max-width: 1000px;
+  max-width: 1200px;
   overflow: hidden;
   position: relative;
   margin: 0 auto;
@@ -354,9 +414,9 @@ nav .logo {
   transform: translate(-50%, -50%);
 }
 .carousel-text-container h1 {
-  font-size: 50px;
+  font-size: 70px;
   margin: 5px;
-  font-display: cinque-donne-pro, cursive;
+  font-family: cinque-donne, serif;
 }
 .carousel-text-container h2 {
   font-size: 20px;
@@ -364,21 +424,38 @@ nav .logo {
   line-height: 25px;
 }
 .carousel-text-container button {
-  border: none;
-  margin: 5px;
-  background-color: #0A235C;
-  color: #F2F2F2;
-  width: 100px;
-  height: 30px;
+  background: #0A235C;
+  color: white;
+  cursor: pointer;
+  font-family: Lato, 'Futura', Helvetica, sans-serif;
+  font-size: 1.6rem;
+  border: 2px solid #0A235C;
+  width: 120px;
+  height: 35px;
   padding: 5px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
 }
 .carousel-text-container button:hover {
-  background-color: #FFEDEA;
-  cursor: pointer;
+  background: #FFEDEA;
   color: #0A235C;
-  font-weight: bold;
-  transition: 0.25s ease;
+}
+.carousel-text-container button a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.carousel-text-container button a:hover {
+  color: #0A235C;
 }
 @media (max-width: 745px) {
   .carousel-text-container {
@@ -401,10 +478,12 @@ nav .logo {
 }
 /*ALEXIS'S HOW IT WORKS, TIMELINE, & WEDDING PLANNERS SECTION*/
 .intro {
-  padding: 90px 0 40px;
-  border-bottom: 2px solid #C2EBE6;
+  padding: 30px 0 40px;
   margin-left: 70px;
-  margin-right: 70px;
+  margin-right: 75px;
+}
+.intro p {
+  margin-bottom: 80px;
 }
 @media screen and (max-width: 500px) {
   .intro {
@@ -413,13 +492,28 @@ nav .logo {
 }
 h1 {
   color: #0A235C;
-  font-family: arial, sans-serif;
   text-align: center;
-  margin-bottom: 60px;
   margin-top: 30px;
+  margin-bottom: 50px;
+}
+h3 {
+  color: #0A235C;
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 25px;
 }
 .table-header {
   width: 100%;
+}
+.table-header h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+.table-header h2 {
+  color: #0A235C;
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 500px) {
   .table-header {
@@ -428,11 +522,12 @@ h1 {
   }
 }
 .timeline-table {
-  font-family: arial, sans-serif;
+  font-family: Lato, arial, sans-serif;
+  font-size: 1.8rem;
   border-collapse: collapse;
   box-shadow: 5px 20px 18px grey;
   width: 80%;
-  margin: 85px;
+  margin: 30px 85px ;
 }
 @media screen and (max-width: 500px) {
   .timeline-table {
@@ -467,18 +562,30 @@ tr:nth-child(even) {
   display: flex;
   justify-content: center;
 }
-button {
-  display: flex;
-  justify-content: center;
-  background-color: #0A235C;
-  color: #FFFFFF;
-  width: 100px;
-  height: 30px;
-  font-size: 13px;
+.start-here-btn button {
+  background: #0A235C;
+  color: white;
   cursor: pointer;
+  font-family: Lato, 'Futura', Helvetica, sans-serif;
+  font-size: 1.6rem;
+  border: 2px solid #0A235C;
+  width: 120px;
+  height: 35px;
+  padding: 5px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+.start-here-btn button:hover {
+  background: #FFEDEA;
+  color: #0A235C;
 }
 @media screen and (max-width: 500px) {
-  button {
+  .start-here-btn button {
     width: 20%;
     margin-top: 30px;
   }
@@ -686,21 +793,38 @@ button {
   }
 }
 .footer-txt button {
-  border: none;
-  margin: 5px;
-  background-color: #0A235C;
-  color: #F2F2F2;
-  width: 100px;
-  height: 30px;
+  background: #0A235C;
+  color: white;
+  cursor: pointer;
+  font-family: Lato, 'Futura', Helvetica, sans-serif;
+  font-size: 1.6rem;
+  border: 2px solid #0A235C;
+  width: 120px;
+  height: 35px;
   padding: 5px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
-  transition: 0.25s ease;
 }
 .footer-txt button:hover {
-  background-color: #FFEDEA;
-  cursor: pointer;
+  background: #FFEDEA;
   color: #0A235C;
-  font-weight: bold;
+}
+.footer-txt button a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.footer-txt button a:hover {
+  color: #0A235C;
 }
 @media (max-width: 745px) {
   .footer-txt {

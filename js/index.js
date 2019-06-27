@@ -1,3 +1,22 @@
+// Setting link to active
+
+// $(document).ready(function () {
+//     $(function(){
+//         var current = location.pathname;
+//         $('.nav-list li a').each(function(){
+//             var $this = $(this);
+//             // if the current path is like this link, make it active
+//             if($this.attr('href').indexOf(current) !== -1){
+//                 $this.addClass('active');
+//             }
+//         })
+//     })
+// })
+
+const navActive = () => {
+
+}
+
 // Navigation Hamburger Menu: Jade
 
 const navSlide = () => {
@@ -123,7 +142,7 @@ class Carousel {
 }
 
 let carousel = new Carousel(document.querySelector('.carousel'));
-console.log(carousel.imgs);
+// console.log(carousel.imgs);
 
 
 // Accordion: Jade

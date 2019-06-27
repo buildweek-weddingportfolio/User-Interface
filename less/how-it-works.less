@@ -1,26 +1,46 @@
 /*ALEXIS'S HOW IT WORKS, TIMELINE, & WEDDING PLANNERS SECTION*/
 
 .intro {
-    padding: 90px 0 40px;
-    border-bottom: 2px solid #C2EBE6;
+    padding: 30px 0 40px;
     margin-left: 70px;
-    margin-right: 70px;
+    margin-right: 75px;
+
+    p{
+        margin-bottom: 80px;
+    }
+    
     @media screen and (max-width: 500px) {
      width: 80%;
       }
   }
       h1 {
-          color: #0A235C;
-          font-family: arial, sans-serif;
+          color:@dark-blue;
           text-align: center;
-          margin-bottom: 60px;
           margin-top: 30px;
-          @media screen and (max-width: 500px) {
-          }   
+          margin-bottom: 50px;   
+      }
+      h3 {
+        color: @dark-blue;
+        text-align: center;
+        font-size: 2.4rem;
+        margin-bottom: 25px;
       }
 
       .table-header {
-          width: 100%;
+          width: 100%; h2 {
+              font-size: 3rem;
+              text-align: center;
+          }
+
+
+          h2 {
+            color: @dark-blue;
+            font-size:2.8rem;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+
           @media screen and (max-width: 500px) {
               width: 94%;
               padding-top: 30px;
@@ -28,11 +48,13 @@
       }
 
       .timeline-table {
-          font-family: arial, sans-serif;
+          font-family: Lato, arial, sans-serif;
+          font-size: 1.8rem;
           border-collapse: collapse;
           box-shadow: 5px 20px 18px grey;
           width: 80%;
-          margin: 85px;
+          margin: 30px 85px ;
+        
           @media screen and (max-width: 500px) {
               width: 82%;
               margin: 10px;
@@ -52,7 +74,7 @@
       }
 
       tr:nth-child(even) {
-          background-color: #FFEDEA;
+          background-color: @pink;
       }
 
 
@@ -66,34 +88,32 @@
 }//How It Works End
 
 
-
 .middle-content {
+    // border-bottom: 2px solid @mint;
   @media screen {
       width: 100%;
   }
 }
 
-.start-here-btn {
-display: flex;
-justify-content: center;  
-@media screen and (max-width: 500px) {
-  
-  }
+.start-here-btn { 
+    display: flex;
+    justify-content: center; 
+    
+    button {
+        .button();
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+
+        &:hover {
+            .button-hover();
+        }
+
+        @media screen and (max-width: 500px) {
+            width: 20%;
+            margin-top: 30px;
+        }
+    }
 }
-button {
-  display: flex;
-  justify-content: center;
-  background-color: #0A235C;
-  color: #FFFFFF;
-  width: 100px;
-  height: 30px;
-  font-size: 13px;
-  @media screen and (max-width: 500px) {
-      width: 20%;
-      margin-top: 30px;
-  }
-  cursor: pointer;
-}
+
 
   .carousel {
     width: 100%;
@@ -149,6 +169,4 @@ button {
       }
       
     }
-
-  
 }

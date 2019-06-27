@@ -47,23 +47,22 @@
 
     }
     button {
-        border: none;
-        margin: 5px;
-        background-color: @dark-blue;
-        color: @light-grey;
-        width: 100px;
-        height: 30px;
-        padding: 5px;
+        .button();
         box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
-        transition: .25s ease;
 
         &:hover {
-            background-color: @pink;
-            color: @dark-blue;
-            cursor: pointer;
-            color: @dark-blue;
-            font-weight: bold;
+            .button-hover();
             
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            .transition();
+
+            &:hover {
+                color: @dark-blue;
+            }
         }
     }
 
