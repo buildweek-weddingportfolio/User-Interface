@@ -65,10 +65,16 @@
 
 
 .tabs {
-  width: 50%;
+  width: 42%;
   border: 1px solid;
   margin: 0 auto;
   box-shadow: 5px 20px 20px grey;
+  @media screen and (max-width: 500px) {
+    width: 92%;
+    margin-right: 30px;
+    margin-left: 20px;
+    border: 2px solid;
+     }
   
     .tabs-items {
       width: 100%;
@@ -78,11 +84,17 @@
       align-content: center;
       padding-top: 60px;
       background-color:#FFEDEA;
+      @media screen and (max-width: 500px) {
+        width: 100%;
+         }
     }
 
     img {
       width: 140px;
       height: 180px;
+      @media screen and (max-width: 500px) {
+        width: 50%;
+         }
     }
 
     .tabs-item {
@@ -93,22 +105,38 @@
         font-size: 24px;
         font-weight: bold;
         padding-bottom: 10px;
+        @media screen and (max-width: 500px) {
+          width: 80%;
+           }
       }
+      @media screen and (max-width: 500px) {
+        width: 80%;
+         }
     }
     .tabs-item-selected {
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
+      @media screen and (max-width: 500px) {
+        width: 87%;
+         }
     }
   
     .tabs-item-context {
       text-align: center;
       margin-left: 30px;
+      @media screen and (max-width: 500px) {
+        width: 80%;
+        margin-left: 32px;
+         }
     }
 
     .tabs-links {
       display: flex;
       background-color: #FFEDEA;
+      @media screen and (max-width: 500px) {
+        width: 10%;
+         }
     }
   
     .tabs-link {
@@ -118,7 +146,12 @@
       border-right: 1px solid #FFFFFF;
       color: #FFFFFF;
       cursor: pointer;
-      
+      @media screen and (max-width: 500px) {
+        width: 80%;
+        font-size: 20px;
+        padding: 15px 18px;
+        border-right: 2px solid #FFFFFF;
+         }
     }
     .tabs-link-selected {
       z-index: 2;
@@ -128,6 +161,9 @@
       &:hover {
         background-color: #FFFFFF;
       }
+      @media screen and (max-width: 500px) {
+        width: 112%;
+         }
     }
 
     a {
@@ -137,11 +173,17 @@
       text-decoration: none;
       padding-left: 7px;
       padding-right: 7px;
+      @media screen and (max-width: 500px) {
+        width: 80%;
+         }
     }
 
   .tabs-item-description {
     margin-bottom: 30px;
     margin-top: 50px;
+    @media screen and (max-width: 500px) {
+      width: 92%;
+       }
   }  
 
 }
