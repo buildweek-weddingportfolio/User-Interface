@@ -60,54 +60,88 @@
     }
 }
 
-// Tabs Section
+// Tabs Section - Alexis
+
+
 
 .tabs {
-  width: 100%;
-  .tabs-items {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    padding-top: 60px;
-  }
-  .tabs-item {
-    display: none; 
+  width: 50%;
+  border: 1px solid;
+  margin: 0 auto;
+  box-shadow: 5px 20px 20px grey;
+  
+    .tabs-items {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      justify-content: space-around;
+      align-content: center;
+      padding-top: 60px;
+      background-color:#FFEDEA;
+    }
 
-    width: 75%;
-    .tabs-item-title {
+    img {
+      width: 140px;
+      height: 180px;
+    }
+
+    .tabs-item {
+      display: none; 
+  
+      width: 75%;
+      .tabs-item-title {
+        font-size: 24px;
+        font-weight: bold;
+        padding-bottom: 10px;
+      }
+    }
+    .tabs-item-selected {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  
+    .tabs-item-context {
+      text-align: center;
+      margin-left: 30px;
+    }
+
+    .tabs-links {
+      display: flex;
+      background-color: #FFEDEA;
+    }
+  
+    .tabs-link {
+      padding: 20px 25px;
       font-size: 24px;
-      font-weight: bold;
-      padding-bottom: 10px;
+      background-color: #0A235C;
+      border-right: 1px solid #FFFFFF;
+      color: #FFFFFF;
+      cursor: pointer;
+      
     }
-  }
-  .tabs-item-selected {
-    display: block;
-  }
+    .tabs-link-selected {
+      z-index: 2;
+      border-right: 1px solid #FFFFFF;
+      background-color: #FFEDEA;
+      color: #0A235C;
+      &:hover {
+        background-color: #FFFFFF;
+      }
+    }
 
-  .tabs-links {
-    display: flex;
-    background-color: @dark-blue;
-  }
+    a {
+      border: 2px solid #0A235C;
+      color: white;
+      background-color: #0A235C;
+      text-decoration: none;
+      padding-left: 7px;
+      padding-right: 7px;
+    }
 
-  .tabs-link {
-    padding: 20px 25px;
-    font-size: 24px;
-    background-color: @dark-blue;
-    border-right: 1px solid white;
-    color: white;
-    cursor: pointer;
-    &:hover {
-      background-color: @dark-blue;
-    }
-  }
-  .tabs-link-selected {
-    z-index: 2;
-    border-right: 1px solid @dark-blue;
-    background-color: white;
-    color: black;
-    &:hover {
-      background-color: white;
-    }
-  }
+  .tabs-item-description {
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }  
+
 }

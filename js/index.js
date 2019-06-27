@@ -68,34 +68,47 @@ class ImgSlide {
     }
     slideRight() {
         console.log('Outer: ' + this.index);
-        if (this.index <= 1) {
-            
-            if (this.index < 0) {
-                this.slide[this.index] == 0;
-            }
+        this.slide[this.index].style.display = "none";
 
-            this.slide[this.index].style.display = "none";
+        if (this.slide.length === this.index+1) {
+            this.index = 0;
+        } else {
             this.index++;
-            this.slide[this.index].style.display = "block";
-            
-            console.log("inside if : " + this.index);
         }
+        this.slide[this.index].style.display = "block";
         
-    }
+        //Took pieces of below code and reworked it into above to get the slide to work properly
+        // if (this.index <= 1) {
+            
+        //     if (this.index < 0) {
+        //         this.slide[this.index] == 0;
+        //     }
+
+        //     this.index++;
+        //     this.slide[this.index].style.display = "block";
+            
+        //     console.log("inside if : " + this.index);
+        // } 
+     }
     slideLeft() {
         console.log('Outer: ' + this.index);
-            if(this.index >= 0) {
+        this.slide[this.index].style.display = "none";
+        this.index--;
+        this.slide[this.index].style.display = "block";
+
+        //Took pieces of below code and reworked it into above to get the slide to work properly
+            // if(this.index >= 0) {
                 
-                if (this.index < 0) {
-                this.slide[this.index] == 0;
-            }
+            //     if (this.index < 0) {
+            //     this.slide[this.index] == 0;
+            // }
 
-                this.slide[this.index].style.display = "block";
-                this.index--;
-                this.slide[this.index].style.display = "none";
+            //     this.slide[this.index].style.display = "block";
+            //     this.index--;
+            //     
 
-                console.log("inside if : " + this.index);
-            }
+            //     console.log("inside if : " + this.index);
+            // }
     }
 }
 
@@ -174,3 +187,6 @@ let articles = document.querySelectorAll('.article')
 articles.forEach(article => new Article(article));
 
 // console.log(articles);
+
+
+
