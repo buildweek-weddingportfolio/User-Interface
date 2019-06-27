@@ -3,7 +3,7 @@
 // ********** CAROUSEL STUFF START ********** //
 
 #luis {
-    margin-top: 160px;
+    margin-top: 165px;
     padding: 0 50px;
 
     @media(max-width: 500px) {
@@ -13,7 +13,7 @@
 
 .carousel-container {
     height: 500px;
-    max-width: 1000px;
+    max-width: 1200px;
     overflow: hidden;
     position: relative;
     margin: 0 auto;
@@ -75,9 +75,9 @@
     transform: translate(-50%, -50%);
 
     h1 {
-        font-size: 50px;
+        font-size: 70px;
         margin: 5px;
-        font-display: @cursive;
+        font-family: cinque-donne, serif;
     }
     h2 {
         font-size: 20px;
@@ -86,22 +86,21 @@
     }
             
     button {
-        border: none;
-        margin: 5px;
-        background-color: @dark-blue;
-        color: @light-grey;
-        width: 100px;
-        height: 30px;
-        padding: 5px;
+        .button();
         box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
 
         &:hover {
-            background-color: @pink;
-            color: @dark-blue;
-            cursor: pointer;
-            color: @dark-blue;
-            font-weight: bold;
-            transition: .25s ease;
+            .button-hover();
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+            .transition();
+
+            &:hover {
+                color:@dark-blue;
+            }
         }
     }
     @media (max-width: 745px) {

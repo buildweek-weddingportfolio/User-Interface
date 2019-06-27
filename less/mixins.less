@@ -5,7 +5,7 @@
 	align-items: @a;
 }
 
-.shadow{
+.shadow {
     -webkit-box-shadow: @shadow;
        -moz-box-shadow: @shadow;
        -ms-box-shadow: @shadow;
@@ -19,5 +19,24 @@
 	    -ms-transition: @transition; 
 	     -o-transition: @transition; 
 	        transition: @transition; 
+}
+
+.button {
+	background:@dark-blue ;
+	color: white;
+	cursor: pointer;
+	font-family: Lato, 'Futura', Helvetica, sans-serif;
+	font-size:1.6rem;
+	border: 2px solid @dark-blue ;
+	width: 120px;
+	height: 35px;
+	padding: 5px;
+	text-decoration: none;
+	.transition();
+}
+
+.button-hover {
+	background: @pink;
+	color: @dark-blue;
 }
 
