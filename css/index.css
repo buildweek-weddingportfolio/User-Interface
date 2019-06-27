@@ -170,10 +170,27 @@ body {
   height: 100%;
   overflow-x: hidden;
 }
+body {
+  background: white;
+}
+body::after {
+  content: "";
+  background-image: url('../assets/imgs/pattern-wallpaper3.png');
+  opacity: 0.35;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-attachment: fixed;
+}
 .container {
+  background: white;
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
+  padding: 50px 0;
 }
 h1,
 h2,
@@ -355,7 +372,7 @@ nav .logo {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 #luis {
-  margin-top: 165px;
+  margin-top: 115px;
   padding: 0 50px;
 }
 @media (max-width: 500px) {
