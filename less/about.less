@@ -1,6 +1,5 @@
 #about-luis {
-    margin-top: 20px;
-    margin-bottom: 200px;
+    margin-top: 115px;
     padding: 0 50px;
 
     @media(max-width: 500px) {
@@ -9,11 +8,12 @@
 
     .img-container-about {
         position: relative;
-        max-width: 700px;
+        max-width: 1100px;
+        width: 100%;
         overflow: hidden;
-        height: 400px;
+        max-height: 500px;
+        height: 100%;
         margin: 0 auto;
-        margin-top: 50px;
 
         @media(max-width: 700px) {
             height: auto;
@@ -24,39 +24,46 @@
     }
 
     h1 {
-        font-family: cursive;
+        font-family: cinque-donne, cursive;
         color: @dark-blue;
-        font-size: 40px;
+        font-size: 7rem;
         position: absolute;
-        top: 40%;
-        right: 100px;
+        top: 20%;
+        right: 140px;
+        width: 300px;
+        padding: 60px 0;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.8);
 
         @media(max-width: 700px) {
-            width: 200px;
-            text-align: center;
-            padding: 10px;
-            background-color: rgba(255, 255, 255, 0.5);
-            top: 35%;
-            right: 23%;
-            box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.253);
+          top: 20%;
+          right: 20%;
+        }
+
+        @media(max-width: 700px) {
+          top: 5%;
+          right: 10%;
         }
     }
 }
 
     .txt-container-about {
         padding: 50px 0;
-        max-width: 700px;
+        max-width: 1050px;
+        width: 100%;
         margin: 0 auto;
         line-height: 25px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: lighter;
     }
 
     h2 {
         color: @dark-blue;
-        font-family: Arial, Helvetica, sans-serif;
         font-weight: lighter;
         text-align: center;
+    }
+    p{
+      font-size: 2rem;
+      line-height: 28px;
+      padding: 0 20px;
     }
 }
 
@@ -93,6 +100,7 @@
   img {
     width: 179px;
     height: 199px;
+    object-fit: scale-down;
     @media screen and (max-width: 500px) {
       width: 50%;
        }
@@ -168,10 +176,12 @@
     }
 
     button {
-      color: white;
-      background-color: #0A235C;
-      width: 68px;
-      height: 27px;
+      .button();
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+
+      &:hover {
+          .button-hover();
+      }
       @media screen and (max-width: 500px) {
         width: 41%;
         margin-bottom: 25px;
@@ -181,7 +191,7 @@
 
   .tabs-item-description {
     margin-bottom: 30px;
-    margin-top: 50px;
+    margin-top: 20px;
     @media screen and (max-width: 500px) {
       width: 92%;
        }
