@@ -130,6 +130,7 @@ class Carousel {
         this.LeftArrow = this.element.querySelector('.left-button');
         this.RightArrow = this.element.querySelector('.right-button');
         this.imgs = document.querySelectorAll('.carousel-caption');
+        this.imgs.forEach(img => img.style.display = "none")
         this.index = 0;
         this.imgs[this.index].style.display = "block";
         this.RightArrow.addEventListener("click", () => this.moveright());
@@ -161,8 +162,8 @@ class Carousel {
         }
         else {
             this.index -= 1;
-            console.log(this.index);
         }           
+        console.log(this.index);
         this.imgs[this.index].style.display = "block";
     }
 }
