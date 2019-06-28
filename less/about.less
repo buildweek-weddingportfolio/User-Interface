@@ -49,19 +49,21 @@
 
     .txt-container-about {
         padding: 50px 0;
-        max-width: 1100px;
+        max-width: 1050px;
         width: 100%;
         margin: 0 auto;
         line-height: 25px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: lighter;
     }
 
     h2 {
         color: @dark-blue;
-        font-family: Arial, Helvetica, sans-serif;
         font-weight: lighter;
         text-align: center;
+    }
+    p{
+      font-size: 2rem;
+      line-height: 28px;
+      padding: 0 20px;
     }
 }
 
@@ -98,6 +100,7 @@
   img {
     width: 179px;
     height: 199px;
+    object-fit: scale-down;
     @media screen and (max-width: 500px) {
       width: 50%;
        }
@@ -173,10 +176,12 @@
     }
 
     button {
-      color: white;
-      background-color: #0A235C;
-      width: 68px;
-      height: 27px;
+      .button();
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+
+      &:hover {
+          .button-hover();
+      }
       @media screen and (max-width: 500px) {
         width: 41%;
         margin-bottom: 25px;
@@ -186,7 +191,7 @@
 
   .tabs-item-description {
     margin-bottom: 30px;
-    margin-top: 50px;
+    margin-top: 20px;
     @media screen and (max-width: 500px) {
       width: 92%;
        }

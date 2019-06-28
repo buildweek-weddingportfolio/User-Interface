@@ -295,18 +295,6 @@ nav .logo {
   background: #FFEDEA;
   color: #0A235C;
 }
-.log-in button:hover a {
-  color: #0A235C;
-}
-.log-in button a {
-  color: white;
-  text-decoration: none;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
 .outside {
   display: block;
 }
@@ -483,18 +471,6 @@ nav .logo {
   background: #FFEDEA;
   color: #0A235C;
 }
-.carousel-text-container button:hover a {
-  color: #0A235C;
-}
-.carousel-text-container button a {
-  color: white;
-  text-decoration: none;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
 @media (max-width: 745px) {
   .carousel-text-container {
     left: 50%;
@@ -599,13 +575,13 @@ tr:nth-child(even) {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 50px 0 20px;
+  margin: 30px 0 20px;
 }
 .start-here-btn h2 {
   color: #0A235C;
   font-size: 2.4rem;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 .start-here-btn button {
   background: #0A235C;
@@ -874,18 +850,20 @@ tr:nth-child(even) {
 }
 #about-luis .txt-container-about {
   padding: 50px 0;
-  max-width: 1100px;
+  max-width: 1050px;
   width: 100%;
   margin: 0 auto;
   line-height: 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
 }
 #about-luis h2 {
   color: #0A235C;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
   text-align: center;
+}
+#about-luis p {
+  font-size: 2rem;
+  line-height: 28px;
+  padding: 0 20px;
 }
 .tabs {
   width: 605px;
@@ -919,6 +897,7 @@ tr:nth-child(even) {
 .tabs img {
   width: 179px;
   height: 199px;
+  object-fit: scale-down;
 }
 @media screen and (max-width: 500px) {
   .tabs img {
@@ -999,10 +978,27 @@ tr:nth-child(even) {
   }
 }
 .tabs button {
+  background: #0A235C;
   color: white;
-  background-color: #0A235C;
-  width: 68px;
-  height: 27px;
+  cursor: pointer;
+  font-family: Lato, 'Futura', Helvetica, sans-serif;
+  font-size: 1.6rem;
+  border: 2px solid #0A235C;
+  border-radius: 3px;
+  width: 120px;
+  height: 35px;
+  padding: 5px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+.tabs button:hover {
+  background: #FFEDEA;
+  color: #0A235C;
 }
 @media screen and (max-width: 500px) {
   .tabs button {
@@ -1013,7 +1009,7 @@ tr:nth-child(even) {
 }
 .tabs .tabs-item-description {
   margin-bottom: 30px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 @media screen and (max-width: 500px) {
   .tabs .tabs-item-description {
@@ -1127,18 +1123,6 @@ footer {
 .footer-txt button:hover {
   background: #FFEDEA;
   color: #0A235C;
-}
-.footer-txt button:hover a {
-  color: #0A235C;
-}
-.footer-txt button a {
-  text-decoration: none;
-  color: white;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
 @media (max-width: 745px) {
   .footer-txt {
