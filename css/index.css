@@ -263,7 +263,7 @@ nav .logo {
 }
 .nav-list .nav-links a {
   color: #0A235C;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   font-weight: 700;
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
@@ -440,7 +440,7 @@ nav .logo {
 }
 .carousel-text-container {
   color: #0A235C;
-  background-color: rgba(255, 255, 255, 0.65);
+  background-color: rgba(255, 255, 255, 0.85);
   position: absolute;
   text-align: center;
   width: 300px;
@@ -858,7 +858,7 @@ tr:nth-child(even) {
   width: 300px;
   padding: 60px 0;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 @media (max-width: 700px) {
   #about-luis .img-container-about h1 {
