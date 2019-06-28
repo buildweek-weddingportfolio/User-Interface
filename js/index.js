@@ -62,6 +62,7 @@ class ImgSlide {
         this.rightBtn.addEventListener('click', () => this.slideRight());
         this.leftBtn.addEventListener('click', () => this.slideLeft());
         this.index = 0;
+        this.slide.forEach(img => img.style.display = "none")
         this.slide[this.index].style.display = "block";
         // console.log(this.slide[2]);
         
@@ -93,7 +94,11 @@ class ImgSlide {
     slideLeft() {
         console.log('Outer: ' + this.index);
         this.slide[this.index].style.display = "none";
-        this.index--;
+        if (this.index === 0) {
+            this.index = this.slide.length-1;
+        } else {
+            this.index--;
+        }
         this.slide[this.index].style.display = "block";
 
         //Took pieces of below code and reworked it into above to get the slide to work properly
@@ -149,13 +154,20 @@ class Carousel {
 
     moveleft() {
         this.imgs[this.index].style.display = "none";
-        this.index -=1;
+
+        if (0 === this.index) {
+            this.index = this.imgs.length-1;
+
+        }
+        else {
+            this.index -= 1;
+            console.log(this.index);
+        }           
         this.imgs[this.index].style.display = "block";
     }
 }
 
 let carousel = new Carousel(document.querySelector('.carousel'));
-// console.log(carousel.imgs);
 
 
 // Accordion: Jade

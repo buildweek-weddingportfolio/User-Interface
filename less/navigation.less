@@ -22,7 +22,7 @@ nav {
 }
 
 .nav-list{
-    .custom-layout(space-around, center);
+    .custom-layout(space-evenly, center);
     width: 60%;
 
     .nav-links{
@@ -44,9 +44,13 @@ nav {
 
     button {
         .button();
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
 
         &:hover {
             .button-hover();
+            a{
+                color: @dark-blue;
+            }
 
         }
 
@@ -54,10 +58,6 @@ nav {
             color: white;
             text-decoration: none;
             .transition();
-
-            &:hover {
-                color:@dark-blue;
-            }
         }
     }
 }
