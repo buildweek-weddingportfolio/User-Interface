@@ -44,11 +44,12 @@
     bottom: 45%;
     position: absolute;
     background-color: @light-grey;
+    .transition();
 
     &:hover {
+        background-color: @pink;
+        border: .25px solid @dark-blue ;
         cursor: pointer;
-        top: 38.5%;//
-        transition: .25s ease-in-out;
     }
 }
 #right-arrow {
