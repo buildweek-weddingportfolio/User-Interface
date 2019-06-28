@@ -66,22 +66,24 @@
 
 .carousel-text-container {
     color: @dark-blue;
+    background-color: rgba(255, 255, 255, 0.65);
     position: absolute;
     text-align: center;
-    width: 250px;
-    height: 160px;
+    width: 300px;
+    height: 250px;
     top: 50%;
     right: 0;
     transform: translate(-50%, -50%);
 
-    h1 {
+    .welcome {
         font-size: 70px;
-        margin: 5px;
+        line-height: 75px;
+        margin: 35px 5px 5px;
         font-family: cinque-donne, cursive;
     }
     h2 {
         font-size: 20px;
-        margin: 15px;
+        margin: 10px 15px 15px;
         line-height: 25px;
     }
             
@@ -110,7 +112,7 @@
     }
 
     @media(max-width: 600px) {
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.6);
         left: 50%;
         box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.253);
         top: 45%;

@@ -316,22 +316,24 @@ nav .logo {
 }
 .carousel-text-container {
   color: #0A235C;
+  background-color: rgba(255, 255, 255, 0.65);
   position: absolute;
   text-align: center;
-  width: 250px;
-  height: 160px;
+  width: 300px;
+  height: 250px;
   top: 50%;
   right: 0;
   transform: translate(-50%, -50%);
 }
-.carousel-text-container h1 {
+.carousel-text-container .welcome {
   font-size: 70px;
-  margin: 5px;
+  line-height: 75px;
+  margin: 35px 5px 5px;
   font-family: cinque-donne, cursive;
 }
 .carousel-text-container h2 {
   font-size: 20px;
-  margin: 15px;
+  margin: 10px 15px 15px;
   line-height: 25px;
 }
 .carousel-text-container button {
@@ -377,7 +379,7 @@ nav .logo {
 }
 @media (max-width: 600px) {
   .carousel-text-container {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.6);
     left: 50%;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.253);
     top: 45%;
@@ -756,7 +758,7 @@ tr:nth-child(even) {
   text-align: center;
 }
 .tabs {
-  width: 50%;
+  width: 605px;
   border: 1px solid;
   margin: 0 auto;
   box-shadow: 5px 20px 20px grey;
@@ -764,6 +766,7 @@ tr:nth-child(even) {
 @media screen and (max-width: 500px) {
   .tabs {
     width: 92%;
+    height: 102%;
     margin-right: 30px;
     margin-left: 20px;
     border: 2px solid;
@@ -771,7 +774,7 @@ tr:nth-child(even) {
 }
 .tabs .tabs-items {
   width: 100%;
-  height: 300px;
+  height: 325px;
   display: flex;
   justify-content: center;
   padding-top: 60px;
@@ -780,6 +783,7 @@ tr:nth-child(even) {
 @media screen and (max-width: 500px) {
   .tabs .tabs-items {
     width: 100%;
+    height: 99%;
   }
 }
 .tabs img {
@@ -799,11 +803,6 @@ tr:nth-child(even) {
   font-size: 24px;
   font-weight: bold;
   padding-bottom: 10px;
-}
-@media screen and (max-width: 500px) {
-  .tabs .tabs-item .tabs-item-title {
-    width: 80%;
-  }
 }
 @media screen and (max-width: 500px) {
   .tabs .tabs-item {
@@ -849,9 +848,9 @@ tr:nth-child(even) {
 }
 @media screen and (max-width: 500px) {
   .tabs .tabs-link {
-    width: 80%;
+    width: 189%;
     font-size: 20px;
-    padding: 15px 18px;
+    padding: 15px 19px;
     border-right: 2px solid #FFFFFF;
   }
 }
@@ -872,12 +871,14 @@ tr:nth-child(even) {
 .tabs button {
   color: white;
   background-color: #0A235C;
-  margin-left: 50px;
+  width: 68px;
+  height: 27px;
 }
 @media screen and (max-width: 500px) {
   .tabs button {
-    margin-left: 40px;
     width: 41%;
+    margin-bottom: 25px;
+    font-size: 13px;
   }
 }
 .tabs .tabs-item-description {
@@ -889,6 +890,14 @@ tr:nth-child(even) {
     width: 92%;
   }
 }
+h2 {
+  color: #0A235C;
+  font-family: arial, sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  font-size: 30px;
+}
 footer {
   background-color: #FFEDEA;
   background-image: url('../assets/imgs/img-footer.png');
@@ -896,6 +905,7 @@ footer {
   background-position: 0% 0%;
   background-repeat: no-repeat;
   background-size: cover;
+  border-bottom: 15px solid #0A235C;
   height: 500px;
   margin: 0;
   display: flex;
