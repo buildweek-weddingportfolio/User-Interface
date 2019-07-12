@@ -1,14 +1,14 @@
 # User-Interface
 
-##View the Website:
+## View the Website:
 [link](https://wedinggram.netlify.com/)
 
-##View the repos:
+## View the repos:
 [(Full Wedding Gram Reopsitory) ](https://github.com/buildweek-weddingportfolio)
 
 [(Click here to go to the FE repository)](https://github.com/buildweek-weddingportfolio/Front-End)
 
-##What is Wedding Gram?
+## What is Wedding Gram?
 
 As a couple, when you first enter the site you can immediately view the weddings being planned around you- without having to  log in or create an account. If you're a wedding planner, it's also just as simple. Create a account, go to your dashboard, and quickly add new wedding events from the get-go. No need to write an elaborate blogpost or upload slideshows worth of images: just create a post and share it!
 
